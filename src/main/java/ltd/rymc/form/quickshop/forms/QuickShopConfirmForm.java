@@ -13,9 +13,9 @@ public class QuickShopConfirmForm extends RSimpleForm {
     public QuickShopConfirmForm(Player player, RForm previousForm, QuickShop shop) {
         super(player, previousForm);
         this.shop = shop;
-        title("§l你确定?");
-        content("删除商店");
-        button("确定", FormImage.of(FormImage.Type.PATH, "textures/ui/realms_green_check.png"));
+        title("§l您確定嗎?");
+        content("刪除商店");
+        button("確定", FormImage.of(FormImage.Type.PATH, "textures/ui/realms_green_check.png"));
     }
 
     @Override
