@@ -67,6 +67,12 @@ public class ShopListener implements Listener {
     public void ShopClickEvent(ShopClickEvent event) {
         QuickShop shop = event.getShop();
         if (shop.isEmpty()) return;
+        Player player = event.getPlayer();
+        if (player.hasPermission("quickshop.ignore")) return;
         new QuickShopMainForm(event.getPlayer(), null, shop).send();
+        if (Math.random() < 0.3) {
+            player.sendMessage("&e如不需使用此選單，請使用 /qsf 指令關閉");
+        }
+
     }
 }

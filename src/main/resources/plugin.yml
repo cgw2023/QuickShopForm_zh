@@ -7,3 +7,4 @@ softdepend: [ QuickShop, QuickShop-Hikari ]
 authors: [ RENaa_FD ]
 description: 快捷商店Form菜单支持
 website: https://rymc.ltd/
+folia-supported: true
